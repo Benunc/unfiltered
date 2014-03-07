@@ -16,7 +16,7 @@ The Unfiltered Theme requires the Genesis Framework which can be purchased at ht
 
 **The Unfiltered Theme does not include support.**
 
-In an attempt to pay it forward, I decided to make this theme free to download. I poured my heart and sould into this design, so please respect this decision to make it available by using it "as is."
+In an attempt to pay it forward, I decided to make this theme free to download. I poured my heart and soul into this design, so please respect the decision to make it available by using it "as is."
 
 I'll be updating this theme frequently, so it's up to you to identify any changes and apply them on your own.
 
@@ -31,5 +31,5 @@ The Unfiltered Theme was meant to be simple. Some functionality of the Genesis F
 Simply add a text widget into the Header Right widget area. Below is the code that I've used on my own blog:
 
 ```
-<h1 class="site-title" itemprop="headline"><a href="http://unfiltered.me/" title="Unfiltered"><span class="header-un">Un</span><span class="header-filtered">filtered</span></a></h1>
+<h1 class="site-title" itemprop="headline"><a href="http://unfiltered.me/" title="Unfiltered"><span class="un">Un</span><span class="filtered">filtered</span></a></h1>
 ```

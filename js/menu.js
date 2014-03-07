@@ -1,8 +1,8 @@
 jQuery(function( $ ){
 
-	$(".genesis-nav-menu").addClass("responsive-menu").before('<div id="responsive-menu-icon"></div>');
+	$(".genesis-nav-menu").addClass("header-menu").before('<div id="header-menu-icon"></div>');
 
-	$("#responsive-menu-icon").click(function(){
+	$("#header-menu-icon").click(function(){
 		$(".genesis-nav-menu").fadeToggle();
 	});
 

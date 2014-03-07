@@ -72,7 +72,6 @@ time, mark, audio, video {
 }
 
 
-
 /*
 Defaults
 ---------------------------------------------------------------------------------------------------- */
@@ -94,7 +93,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 textarea:focus,
-#responsive-menu-icon::before  {
+#header-menu-icon::before  {
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition:    all 0.2s ease-in-out;
 	-ms-transition:     all 0.2s ease-in-out;
@@ -141,18 +140,18 @@ li {
 }
 
 .entry blockquote {
-	font-size: 24px;
 	font-style: italic;
-	margin: 50px -80px;
-	text-align: center;
+	margin: 40px;
 }
 
 .entry blockquote::before {
-	border-bottom: 1px solid #ddd;
-	content: "";
+	content: "\201C";
 	display: block;
-	margin: 50px auto;
-	width: 10%;
+	font-size: 30px;
+	height: 0;
+	left: -20px;
+	position: relative;
+	top: -10px;
 }
 
 .entry-comments blockquote {
@@ -167,6 +166,7 @@ li {
 cite {
 	font-style: normal;
 }
+
 
 /*
 Site Container
@@ -201,12 +201,12 @@ Site Header
 	color: #000;
 }
 
-.site-title .header-un {
+.site-title .un {
 	font-family: 'proxima-nova', sans-serif;
 	font-weight: 600;
 }
 
-.site-title .header-filtered {
+.site-title .filtered {
 	font-family: 'proxima-nova', sans-serif;
 	font-weight: 300;
 }
@@ -246,19 +246,19 @@ Site Navigation
 
 
 /*
-Mobile Menu
+Header Menu
 ---------------------------------------------------------------------------------------------------- */
 
-.responsive-menu {
+.header-menu {
 	display: none;
 }
 
-#responsive-menu-icon {
+#header-menu-icon {
 	cursor: pointer;
 	display: inline-block;
 }
 
-#responsive-menu-icon::before {
+#header-menu-icon::before {
 	color: #000;
 	content: "\f333";
 	font: normal 24px/1 'dashicons';
@@ -338,6 +338,8 @@ Entry Meta
 ---------------------------------------------------------------------------------------------------- */
 
 .entry-meta {
+	font-size: 16px;
+	font-style: italic;
 	margin-bottom: 40px;
 }
 
@@ -349,13 +351,9 @@ Entry Meta
 	border-bottom: 1px dotted #e32929;
 }
 
-p.entry-meta {
-	font-size: 16px;
-	font-style: italic;
-}
 
 /*
-Entry Meta
+Subscribe
 ---------------------------------------------------------------------------------------------------- */
 
 .subscribe {
@@ -380,33 +378,82 @@ p.subscribe {
 
 
 /*
-Pagination
+Newsletter
 ---------------------------------------------------------------------------------------------------- */
 
-.pagination {
-	margin: 40px 0;
+.newsletter {
+	background-color: #f5f5f5;
+	margin-top: 40px;
+	overflow: hidden;
+	padding: 40px;
+	text-align: center;
 }
 
-.adjacent-entry-pagination {
-	margin-bottom: 0;
+.newsletter input[type="email"],
+.newsletter input[type="submit"] {
+	border: none;
+	float: left;
 }
 
-.archive-pagination li {
-	display: inline;
+.newsletter input[type="email"] {
+	font-size: 18px;
+	letter-spacing: 0.3px;
+	padding: 18px 20px;
+	width: 72%;
 }
 
-.archive-pagination li a {
-	background-color: #000;
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-	color: #fff;
-	cursor: pointer;
-	display: inline-block;
-	padding: 8px 12px;
+.newsletter input[type="submit"] {
+	margin: 0;
+	padding: 20px;
+	width: auto;
 }
 
-.archive-pagination li a:hover,
-.archive-pagination .active a {
-	background-color: #e32929;
+
+/*
+Headings
+---------------------------------------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4 {
+	color: #000;
+	font-family: 'freight-text-pro', sans-serif;
+	font-weight: 600;
+	line-height: 1;
+	margin: 0 0 20px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3,
+.entry-title {
+	font-size: 24px;
+}
+
+.comment-respond h3,
+.entry-comments h3 {
+	margin-bottom: 30px;
+}
+
+h4,
+.archive-title {
+	font-size: 20px;
+}
+
+.entry-title a {
+	border-bottom: none;
+	color: #000;
+}
+
+.entry-title a:hover {
+	color: #e32929;
 }
 
 
@@ -455,102 +502,11 @@ Entry Misc
 
 
 /*
-Newsletter
+Pagination
 ---------------------------------------------------------------------------------------------------- */
 
-.newsletter {
-	background-color: #f5f5f5;
-	margin-top: 40px;
-	overflow: hidden;
-	padding: 40px;
-	text-align: center;
-}
-
-.newsletter input[type="email"],
-.newsletter input[type="submit"] {
-	border: none;
-	float: left;
-}
-
-.newsletter input[type="email"] {
-	float: left;
-	font-size: 18px;
-	letter-spacing: 0.3px;
-	padding: 18px 20px;
-	width: 72%;
-}
-
-.newsletter input[type="submit"] {
-	float: left;
-	margin: 0;
-	padding: 20px;
-	width: auto;
-}
-
-
-/*
-Headings
----------------------------------------------------------------------------------------------------- */
-
-h1,
-h2,
-h3,
-h4 {
-	color: #000;
-	font-family: 'freight-text-pro', sans-serif;
-	font-weight: 600;
-	line-height: 1;
-	margin: 0 0 20px;
-}
-
-h1 {
-	font-size: 36px;
-}
-
-h2 {
-	font-size: 30px;
-}
-
-h3 {
-	font-size: 24px;
-}
-
-.comment-respond h3,
-.entry-comments h3 {
-	margin-bottom: 30px;
-}
-
-h4 {
-	font-size: 20px;
-}
-
-
-/*
-Titles
----------------------------------------------------------------------------------------------------- */
-
-.archive-title {
-	font-size: 20px;
-}
-
-.entry-title {
-	font-size: 24px;
-	margin-bottom: 20px;
-}
-
-.entry-title a {
-	border-bottom: none;
-	color: #000;
-}
-
-.entry-title a:hover {
-	color: #e32929;
-}
-
-.widget-title {
-	font-size: 16px;
-	margin-bottom: 20px;
-	text-transform: uppercase;
+.pagination {
+	margin: 40px 0;
 }
 
 
@@ -569,7 +525,6 @@ img {
 
 .author-box .avatar {
 	height: 80px;
-	margin-right: 24px;
 	width: 80px;
 }
 
@@ -582,10 +537,6 @@ img {
 /*
 Forms and Buttons
 ---------------------------------------------------------------------------------------------------- */
-
-.search-form input {
-	width: 75%
-}
 
 input,
 select,
@@ -765,12 +716,10 @@ Site Footer
 
 .site-footer a {
 	border-bottom: 1px dotted #000;
-	color: #000;
 }
 
 .site-footer a:hover {
 	border-bottom: 1px dotted #e32929;
-	color: #e32929;
 }
 
 .site-footer p {
@@ -787,15 +736,6 @@ Site Footer
 /*
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
-
-
-@media only screen and (max-width: 1024px) {
-
-}
-
-@media only screen and (max-width: 768px) {
-
-}
 
 @media only screen and (max-width: 600px) {
 

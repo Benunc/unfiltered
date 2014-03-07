@@ -15,8 +15,8 @@ add_theme_support( 'genesis-responsive-viewport' );
 add_action( 'wp_enqueue_scripts', 'unfiltered_enqueue_scripts_styles' );
 function unfiltered_enqueue_scripts_styles() {
 
-	// Enqueue menu script
-	wp_enqueue_script( 'unfiltered-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/menu.js', array( 'jquery' ), '1.0.0' );
+	// Enqueue header menu script
+	wp_enqueue_script( 'header-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/menu.js', array( 'jquery' ), '1.0.0' );
 
 	// Enqueue dashicons style
 	wp_enqueue_style( 'dashicons' );
