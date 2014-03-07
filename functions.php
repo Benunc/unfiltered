@@ -183,7 +183,9 @@ remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
 add_action( 'genesis_footer', 'bg_footer' );
 	function bg_footer() { ?>
 
-	<div class="site-footer"><div class="wrap"><p>Powered by <a href="http://www.starbucks.com/">Starbucks lattes</a>, <a href="http://www.sarahmclachlan.com/">really good music</a> and the <a href="http://www.studiopress.com/">Genesis Framework</a>.</p><p>Follow me on <a href="http://www.facebook.com/bgardner">Facebook</a>, <a href="http://plus.google.com/109450535379570250650?rel=author">Google+</a>, <a href="http://instagram.com/bgardner">Instagram</a> or <a href="http://twitter.com/bgardner" rel="me">Twitter</a>.</p></div></div>
+	<div class="site-footer"><div class="wrap"><p>Powered by <a href="http://www.starbucks.com/">Starbucks lattes</a>, <a href="http://www.sarahmclachlan.com/">really good music</a> and the <a href="http://www.studiopress.com/">Genesis Framework</a>.</p><p>Follow me on <a href="http://www.facebook.com/bgardner">Facebook</a>, <a href="http://plus.google.com/109450535379570250650?rel=author">Google+</a>, <a href="http://instagram.com/bgardner">Instagram</a>, <a href="http://twitter.com/bgardner" rel="me">Twitter</a>. Get from <a href="https://github.com/bgardner/unfiltered">Github</a>.</p>
+	
+	</div></div>
 
 	<?php
 }
