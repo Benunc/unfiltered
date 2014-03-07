@@ -16,7 +16,7 @@ The Unfiltered Theme requires the Genesis Framework which can be purchased at ht
 
 **The Unfiltered Theme does not include support.**
 
-In an attempt to make the world a better place and to pay it forward, I decided to make this theme free to download. I poured my heart and sould into this design, so please respect this decision to make it available by using it "as is."
+In an attempt to pay it forward, I decided to make this theme free to download. I poured my heart and sould into this design, so please respect this decision to make it available by using it "as is."
 
 I'll be updating this theme frequently, so it's up to you to identify any changes and apply them on your own.
 
@@ -24,7 +24,7 @@ I'll be updating this theme frequently, so it's up to you to identify any change
 
 ## Theme Setup
 
-The Unfiltered Theme was meant to be minimal. Some functionality and features of the Genesis Framework have been removed.
+The Unfiltered Theme was meant to be simple. Some functionality of the Genesis Framework has been removed.
 
 **Site Title**
 
