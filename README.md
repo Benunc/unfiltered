@@ -21,3 +21,15 @@ In an attempt to make the world a better place and to pay it forward, I decided 
 I'll be updating this theme frequently, so it's up to you to identify any changes and apply them on your own.
 
 **I reserve the right to modify these terms or remove the theme entirely from Github at my discretion.**
+
+## Theme Setup
+
+The Unfiltered Theme was meant to be minimal. Some functionality and features of the Genesis Framework have been removed.
+
+**Site Title**
+
+Simply add a text widget into the Header Right widget area. Below is the code that I've used on my own blog:
+
+```
+<h1 class="site-title" itemprop="headline"><a href="http://unfiltered.me/" title="Unfiltered"><span class="header-un">Un</span><span class="header-filtered">filtered</span></a></h1>
+```
