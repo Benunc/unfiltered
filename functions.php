@@ -51,6 +51,15 @@ function unfiltered_jetpack_open_graph_tags_filter( $tags ) {
 
 }
 
+//* Replace Twitter OG handle to @bgardner
+add_filter( 'jetpack_open_graph_tags', 'tweakjp_custom_twitter_site', 11 );
+function tweakjp_custom_twitter_site( $og_tags ) {
+
+	$og_tags['twitter:site'] = '@bgardner';
+	return $og_tags;
+
+}
+
 //* Unregister navigation menus
 remove_theme_support( 'genesis-menus' );
 
@@ -133,10 +142,9 @@ add_action( 'genesis_entry_footer', 'unfiltered_subscribe_text', 12 );
 function unfiltered_subscribe_text() {
 
 	// Only display on singular posts with aside post format
-	if ( is_singular( 'post' ) && get_post_format() == 'aside' ) {
+	if ( is_singular( 'post' ) )
 	
 	echo '<p class="subscribe">Like what you read on my blog? <a href="http://unfiltered.me/subscribe/">Subscribe now</a> and get it delivered to your inbox.<ahref="http://unfiltered.me/subscribe/"></a></p>';
-	}
 
 }
 
