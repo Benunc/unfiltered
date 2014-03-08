@@ -269,7 +269,7 @@ Header Menu
 Dashicons
 ---------------------------------------------------------------------------------------------------- */
 
-.dashicons {
+.entry-content .dashicons {
 	position: absolute;
 	left: -30px;
 	top: 2px;
@@ -285,6 +285,31 @@ Dashicons
 	color: #000;
 }
 
+.entry-nav a {
+	color: #eee;
+}
+
+.entry-nav a:hover {
+	color: #000;
+}
+
+.entry-nav .dashicons {
+	font-size: 36px;
+	height: 36px;
+	width: 36px;
+}
+
+.dashicons-arrow-left-alt2 {
+	position: fixed;
+	left: 20px;
+	top: 45%;
+}
+
+.dashicons-arrow-right-alt2 {
+	position: fixed;
+	right: 20px;
+	top: 45%;
+}
 
 /*
 Content Area
