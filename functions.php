@@ -147,7 +147,7 @@ function unfiltered_post_meta_filter($post_meta) {
 add_action( 'genesis_entry_footer', 'unfiltered_subscribe_text', 12 );
 function unfiltered_subscribe_text() {
 
-	// Only display on singular posts with aside post format
+	// Only display on single posts
 	if ( is_singular( 'post' ) )
 	
 	echo '<p class="subscribe">Like what you read on my blog? <a href="http://unfiltered.me/subscribe/">Subscribe now</a> and get it delivered to your inbox.<ahref="http://unfiltered.me/subscribe/"></a></p>';
