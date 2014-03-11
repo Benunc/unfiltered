@@ -298,7 +298,7 @@ Content Area
 
 .page .entry {
 	border-bottom: none;
-	margin-bottom: 30px;
+	margin-bottom: 0;
 }
 
 .entry-content a {
@@ -383,6 +383,7 @@ Newsletter
 
 .newsletter {
 	background-color: #f5f5f5;
+	margin-bottom: 40px;
 	margin-top: 40px;
 	overflow: hidden;
 	padding: 40px;
@@ -537,6 +538,17 @@ img {
 /*
 Forms and Buttons
 ---------------------------------------------------------------------------------------------------- */
+
+.search-form {
+	background-color: #f5f5f5;
+	margin-top: 40px;
+	overflow: hidden;
+	padding: 40px;
+}
+
+.search-form input {
+	width: 75%;
+}
 
 input,
 select,
@@ -749,6 +761,9 @@ Media Queries
 		text-align: center;
 	}
 
+	.genesis-nav-menu a,
+	.newsletter input[type="email"],
+	.newsletter input[type="submit"],
 	.site-header .widget {
 		width: 100%;
 	}
@@ -776,7 +791,6 @@ Media Queries
 	.genesis-nav-menu a {
 		display: block;
 		margin-right: 0;
-		width: 100%;
 	}
 
 	.entry-content a.dashicons {
@@ -785,6 +799,15 @@ Media Queries
 
 	ul.children {
 		margin-left: 0;
+	}
+
+	.newsletter {
+		background-color: #fff;
+		padding: 0;
+	}
+	
+	.newsletter input[type="email"] {
+		background-color: #f5f5f5;
 	}
 
 }

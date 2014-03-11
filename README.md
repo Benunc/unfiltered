@@ -20,7 +20,7 @@ In an attempt to pay it forward, I decided to make this theme free to download. 
 
 I'll be updating this theme frequently, so it's up to you to identify any changes and apply them on your own.
 
-**I reserve the right to modify these terms or remove the theme entirely from Github at my discretion.**
+**I reserve the right to modify these terms or remove the theme entirely from GitHub at my discretion.**
 
 ## Theme Setup
 
