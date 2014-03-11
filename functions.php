@@ -52,8 +52,8 @@ function unfiltered_jetpack_open_graph_tags_filter( $tags ) {
 }
 
 //* Replace Twitter OG handle to @bgardner
-add_filter( 'jetpack_open_graph_tags', 'tweakjp_custom_twitter_site', 11 );
-function tweakjp_custom_twitter_site( $og_tags ) {
+add_filter( 'jetpack_open_graph_tags', 'unfilitered_jetpack_twitter_username', 11 );
+function unfilitered_jetpack_twitter_username( $og_tags ) {
 
 	$og_tags['twitter:site'] = '@bgardner';
 	return $og_tags;
