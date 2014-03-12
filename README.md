@@ -33,3 +33,11 @@ Simply add a text widget into the Header Right widget area. Below is the code th
 ```
 <h1 class="site-title" itemprop="headline"><a href="http://unfiltered.me/" title="Unfiltered"><span class="un">Un</span><span class="filtered">filtered</span></a></h1>
 ```
+
+**Menu**
+
+All you need to do is create a custom menu and add that in the Header Right widget area after the text widget that I mentioned above for the site title.
+
+**Web Fonts**
+
+The fonts that are being called in the theme style sheet are from Typekit (https://typekit.com/fonts) -- which means you'll need to replace them (with Google Fonts) or default browser fonts will show.

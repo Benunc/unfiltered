@@ -324,6 +324,11 @@ Content Area
 	list-style-type: disc;
 }
 
+p.note {
+	background-color: #f5f5f5;
+	padding: 10px 15px;
+}
+
 p.source {
 	font-family: 'proxima-nova', sans-serif;
 	font-size: 14px;
