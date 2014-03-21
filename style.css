@@ -296,6 +296,7 @@ Content Area
 	position: relative;
 }
 
+.error404 .entry,
 .page .entry {
 	border-bottom: none;
 	margin-bottom: 0;
@@ -520,8 +521,17 @@ Pagination
 Images
 ---------------------------------------------------------------------------------------------------- */
 
+iframe,
 img {
 	max-width: 100%;
+}
+
+iframe {
+	height: auto;
+}
+
+img#wpstats {
+	display: none
 }
 
 .avatar {
@@ -551,8 +561,13 @@ Forms and Buttons
 	padding: 40px;
 }
 
+.error404 .search-form {
+	margin-bottom: 40px;
+}
+
 .search-form input {
 	width: 75%;
+	-webkit-appearance: none;
 }
 
 input,
@@ -566,7 +581,6 @@ textarea {
 	font-weight: 400;
 	padding: 20px;
 	width: 100%;
-	-webkit-appearance: none;
 	-webkit-font-smoothing: antialiased;
 }
 
