@@ -526,10 +526,6 @@ img {
 	max-width: 100%;
 }
 
-iframe {
-	height: auto;
-}
-
 img#wpstats {
 	display: none
 }
