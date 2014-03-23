@@ -116,7 +116,7 @@ function unfiltered_post_format() {
 
 	// Display dashicon for video post formats
 	elseif ( get_post_format() == 'video' ) {
-		echo '<a class="dashicons dashicons-video-alt3" href="http://unfiltered.me/type/video/"></a>';
+		echo '<a class="dashicons dashicons-video-alt3" href="http://unfiltered.me/type/videos/"></a>';
 	}
 
 }
@@ -150,7 +150,7 @@ function unfiltered_subscribe_text() {
 	// Only display on single posts
 	if ( is_singular( 'post' ) )
 	
-	echo '<p class="subscribe">Like what you read on my blog? <a href="http://unfiltered.me/subscribe/">Subscribe now</a> and get it delivered to your inbox.<ahref="http://unfiltered.me/subscribe/"></a></p>';
+	echo '<p class="subscribe">Like what you read on my blog? <a href="http://unfiltered.me/subscribe/">Subscribe now</a> and get it delivered to your inbox.<a href="http://unfiltered.me/subscribe/"></a></p>';
 
 }
 
