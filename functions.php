@@ -3,7 +3,7 @@
 include_once( get_template_directory() . '/lib/init.php' );
 
 //* Child theme (do not remove)
-define( 'CHILD_THEME_VERSION', '1.0.0' );
+define( 'CHILD_THEME_VERSION', '1.0.1' );
 
 //* Add HTML5 markup structure
 add_theme_support( 'html5' );
@@ -84,24 +84,18 @@ remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 //* Add support for post formats
 add_theme_support( 'post-formats', array(
 	'aside',
-	'image',
 	'link',
 	'quote',
 	'video'
 ) );
 
-// Add post format dashicons
+//* Add dashicons before entry content
 add_action( 'genesis_entry_content', 'unfiltered_post_format', 9 );
 function unfiltered_post_format() {
 
-	// Display dashicon for aside post formats
+	// Display dashicon for poem post formats
 	if ( get_post_format() == 'aside' ) {
-		echo '<a class="dashicons dashicons-welcome-write-blog" href="http://unfiltered.me/type/posts/"></a>';
-	}
-
-	// Display dashicon for image post formats
-	elseif ( get_post_format() == 'image' ) {
-		echo '<a class="dashicons dashicons-camera" href="http://unfiltered.me/type/images/"></a>';
+		echo '<a class="dashicons dashicons-edit" href="http://unfiltered.me/type/poems/"></a>';
 	}
 
 	// Display dashicon for link post formats
@@ -117,6 +111,11 @@ function unfiltered_post_format() {
 	// Display dashicon for video post formats
 	elseif ( get_post_format() == 'video' ) {
 		echo '<a class="dashicons dashicons-video-alt3" href="http://unfiltered.me/type/videos/"></a>';
+	}
+
+	// Display dashicon for standard posts
+	else {
+		echo '<a class="dashicons dashicons-welcome-write-blog" href="http://unfiltered.me/type/posts/"></a>';
 	}
 
 }
@@ -149,7 +148,7 @@ function unfiltered_subscribe_text() {
 
 	// Only display on single posts
 	if ( is_singular( 'post' ) )
-	
+
 	echo '<p class="subscribe">Like what you read on my blog? <a href="http://unfiltered.me/subscribe/">Subscribe now</a> and get it delivered to your inbox.<a href="http://unfiltered.me/subscribe/"></a></p>';
 
 }
