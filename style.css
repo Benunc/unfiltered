@@ -126,6 +126,7 @@ a:hover {
 p {
 	margin: 0 0 28px;
 	padding: 0;
+	text-rendering: optimizeLegibility;
 }
 
 strong {
@@ -285,7 +286,8 @@ Dashicons
 }
 
 .page .entry-content .dashicons,
-.single-format-aside .entry-content .dashicons {
+.single-format-aside .entry-content .dashicons,
+.single-format-image .entry-content .dashicons {
 	display: none;
 }
 
@@ -317,7 +319,9 @@ Content Area
 }
 
 .single-format-aside .entry-content,
-.single-format-aside .entry-title {
+.single-format-aside .entry-title,
+.single-format-image .entry-content,
+.single-format-image .entry-title {
 	text-align: center;
 }
 
@@ -373,7 +377,8 @@ Entry Meta
 	margin-bottom: 40px;
 }
 
-.single-format-aside .entry-meta {
+.single-format-aside .entry-meta,
+.single-format-image .entry-meta {
 	display: none;
 }
 
@@ -474,7 +479,8 @@ h3,
 
 .comment-respond h3,
 .entry-comments h3,
-.single-format-aside .entry-title {
+.single-format-aside .entry-title,
+.single-format-image .entry-title {
 	margin-bottom: 30px;
 }
 

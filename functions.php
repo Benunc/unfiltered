@@ -84,6 +84,7 @@ remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 //* Add support for post formats
 add_theme_support( 'post-formats', array(
 	'aside',
+	'image',
 	'link',
 	'quote',
 	'video'
@@ -96,6 +97,11 @@ function unfiltered_post_format() {
 	// Display dashicon for poem post formats
 	if ( get_post_format() == 'aside' ) {
 		echo '<a class="dashicons dashicons-edit" href="http://unfiltered.me/type/poems/"></a>';
+	}
+
+	// Display dashicon for image post formats
+	elseif ( get_post_format() == 'image' ) {
+		echo '<a class="dashicons dashicons-format-image" href="http://unfiltered.me/type/images/"></a>';
 	}
 
 	// Display dashicon for link post formats
