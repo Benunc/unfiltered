@@ -484,6 +484,10 @@ h3,
 	margin-bottom: 30px;
 }
 
+h4 {
+	margin-top: 30px;
+}
+
 h4,
 .archive-title {
 	font-size: 22px;
